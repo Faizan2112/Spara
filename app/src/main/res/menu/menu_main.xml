@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:icon="@drawable/hometool"
+        android:title="home"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/searchome"
+        android:title="Maps"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/Maps"
+
+        android:title="home1"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/home2"
+
+        android:title="home2"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/home3"
+
+        android:title="home3"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        />
+
+<!--
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        &lt;!&ndash;
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.Toolbar>
+        this is used if u wan to make custom toolbar
+        &ndash;&gt;
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            />
+        <android.support.v4.view.ViewPager
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pager"
+            android:layout_below="@+id/tab_layout"
+            >
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>-->
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/retrive_expense_detail"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    card-view:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+
+    >
+
+    <TextView
+        android:id="@+id/retrive_expense_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ExpenseName"
+
+    />
+ <TextView
+     android:id="@+id/retrive_expense_date"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="displayDate"
+     android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+android:layout_toRightOf="@+id/retrive_expense_name"
+     />
+    <TextView
+        android:id="@+id/retrive_expense_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="displayTime"
+        android:layout_toRightOf="@+id/retrive_expense_date"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+        android:layout_alignParentRight="true"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost Of expense"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+
+        />
+
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

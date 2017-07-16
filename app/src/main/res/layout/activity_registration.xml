@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/registration_label"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="REGISTRATION"
+                android:textColor="@color/primary_text_material_light"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/registration_rl_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/registration_label"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/registration_username_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/user"/>
+
+                <EditText
+                    android:id="@+id/registration_username"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/registration_username_icon"
+                    android:hint="Username"
+                    android:textColorHint="@color/colorAccent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/registration_rl_usermobile"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/registration_rl_userpass">
+
+                <ImageButton
+                    android:id="@+id/registration_usermobile_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/phone"/>
+
+                <EditText
+                    android:id="@+id/registration_usermobile"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/registration_usermobile_icon"
+                    android:hint="Mobile"
+                    android:textColorHint="@color/colorAccent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/registration_rl_useremail"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/registration_rl_usermobile">
+
+                <ImageButton
+                    android:id="@+id/registration_useremail_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_useremail"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/registration_useremail_icon"
+                    android:hint="Email"
+                    android:textColorHint="@color/colorAccent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/registration_rl_userpass"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/registration_rl_username">
+
+                <ImageButton
+                    android:id="@+id/registration_userpass_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/key"/>
+
+                <EditText
+                    android:id="@+id/registration_userpass"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/registration_userpass_icon"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorAccent" />
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/registration_rl_radio"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/registration_rl_useremail"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/registration_radio_male"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@color/cardview_light_background"
+                android:text="Male"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/registration_radio_female"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/registration_radio_male"
+                android:background="@color/cardview_light_background"
+                android:text="female"
+                android:textColor="@color/colorAccent"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registration_rl_usersubmit"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/registration_rl_radio"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/registration_submit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@color/cardview_light_background"
+                android:text="Sign Up"
+                android:onClick="SignUp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/registration_signup"
+                android:layout_marginLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/registration_submit"
+                android:background="@color/cardview_light_background"
+                android:text="Login"
+                android:textColor="@color/colorAccent"
+
+                />
+
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

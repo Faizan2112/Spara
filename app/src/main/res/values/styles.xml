@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+    </style>
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat">
+
+        <item name="android:textColorPrimary">@android:color/white</item><!--for title define this in yr app-->
+        <item name="android:textColorSecondary">@android:color/white</item><!--for three dot-->
+
+    </style>
+
+    <style name="sparatheme" parent="AppTheme" />
+    <style name="FloatingActionButton" parent="android:Widget.Material.Button">
+        <item name="android:background">@drawable/fab_background</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+</resources>

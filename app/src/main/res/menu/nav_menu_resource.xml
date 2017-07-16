@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_pages"
+        android:title="Pages">
+        <menu>
+            <item
+                android:id="@+id/nav_weekly"
+                android:title="Weekly"
+                android:icon="@drawable/weekview"
+
+                />
+            <item
+                android:id="@+id/nav_monthly"
+                android:title="Mothly"
+                android:icon="@drawable/calender"
+
+                />
+            <item
+                android:id="@+id/nav_yearly"
+                android:title="Yearly"
+                android:icon="@drawable/year"
+
+                />
+
+        </menu>
+
+    </item>
+
+    <group android:id="@+id/nav_group_0ne"
+
+        >
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/userpro"
+
+            />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:icon="@drawable/setting"
+
+            />
+
+    </group>
+    <group android:id="@+id/nav_group_two"
+
+        >
+        <item
+            android:id="@+id/nav_change_theme"
+            android:title="Themes"
+            android:icon="@drawable/drawer"
+
+            />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"
+
+            />
+
+    </group>
+
+
+</menu>

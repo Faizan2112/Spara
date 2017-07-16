@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mylife.faiza.sqlicurd.MainActivity">
+    <include layout="@layout/activity_recycler_view"/>
+    <Button
+        android:id="@+id/main_add"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="add"
+        />
+    <Button
+        android:id="@+id/main_save"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="save"
+        />
+    <Button
+        android:id="@+id/main_retrieve"
+        android:layout_width="106dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Retrieve"
+        />
+
+</RelativeLayout>
+
+
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.ExpenseFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/expense_graph_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/expense_header_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="Total Expense Graph"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="@dimen/textheader18" />
+
+                    <ImageView
+                        android:id="@+id/expense_header_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/expense_header_text"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/pie"
+
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            &lt;!&ndash; <android.support.v7.widget.CardView
+                 android:id="@+id/expense_graph_card_view_rel"
+                 android:layout_below="@+id/expense_graph_card_view"
+                 android:layout_width="match_parent"
+                 android:layout_height="300dp"
+                 card_view:cardElevation="10dp"
+                 android:scrollbars="vertical"
+                 >&ndash;&gt;
+            <RelativeLayout
+                android:id="@+id/expense_graph_card_view_rel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/expense_graph_card_view">
+
+                <TextView
+                    android:id="@+id/expense_header_text_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="Display Record"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="@dimen/textheader18" />
+
+                <include layout="@layout/my_recycler_view"></include>
+                &lt;!&ndash;  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/expense_recycle_view"
+                      android:layout_below="@+id/expense_header_text_rel"
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      xmlns:android="http://schemas.android.com/apk/res/android" >
+                  </android.support.v7.widget.RecyclerView>
+&ndash;&gt;
+
+
+            </RelativeLayout>
+
+
+            &lt;!&ndash;  </android.support.v7.widget.CardView>
+  &ndash;&gt;
+
+            <RelativeLayout
+                android:id="@+id/expense_add_sourceof_expense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                android:layout_below="@+id/expense_graph_card_view_rel"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundrelative"
+                android:padding="@dimen/padding5"
+
+                >
+
+                <TextView
+                    android:id="@+id/expense_add_sourceof_expense_textview"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:text="Add expense"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <ImageButton
+                    android:id="@+id/expense_add_sourceof_expense_icon"
+                    style="@style/FloatingActionButton"
+                    android:layout_width="@dimen/round_button40"
+                    android:layout_height="@dimen/round_button40"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/expense_add_sourceof_expense_textview"
+                    android:src="@drawable/plus_small"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expense_target_expense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                android:layout_below="@+id/expense_add_sourceof_expense"
+                android:background="@color/backgroundrelative"
+                android:padding="@dimen/padding5">
+
+                <TextView
+                    android:id="@+id/expense_target_expense_text"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:text="Source of expense"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <ImageButton
+                    android:id="@+id/expense_target_expense_icon"
+                    style="@style/FloatingActionButton"
+                    android:layout_width="@dimen/round_button40"
+                    android:layout_height="@dimen/round_button40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/expense_target_expense_text"
+                    android:src="@drawable/plus_small"
+
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expense_save_log"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                android:layout_below="@+id/expense_target_expense"
+                android:background="@color/backgroundrelative"
+                android:padding="@dimen/padding5">
+
+                <TextView
+                    android:id="@+id/expense_save_log_text"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:text="Save log"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <ImageButton
+                    android:id="@+id/expense_save_log_icon"
+                    style="@style/FloatingActionButton"
+                    android:layout_width="@dimen/round_button40"
+                    android:layout_height="@dimen/round_button40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/expense_save_log_text"
+                    android:src="@drawable/plus_small"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expense_save_bill_images"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                android:layout_below="@+id/expense_save_log"
+                android:background="@color/backgroundrelative"
+                android:padding="@dimen/padding5">
+
+                <TextView
+                    android:id="@+id/expense_save_bill_textview"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:text="Save bill images"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <ImageButton
+                    android:id="@+id/expense_save_bill_icon"
+                    style="@style/FloatingActionButton"
+                    android:layout_width="@dimen/round_button40"
+                    android:layout_height="@dimen/round_button40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/expense_save_bill_textview"
+                    android:src="@drawable/plus_small"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expense_add_favourite_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_of_relativelayout_add_resurce_box50"
+                android:layout_below="@+id/expense_save_bill_images"
+                android:background="@color/backgroundrelative"
+                android:padding="@dimen/padding5">
+
+                <TextView
+                    android:id="@+id/expense_add_favourite_textview"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:text="Add favourite"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <ImageButton
+                    android:id="@+id/expense_add_favourite_icon"
+                    style="@style/FloatingActionButton"
+                    android:layout_width="@dimen/round_button40"
+                    android:layout_height="@dimen/round_button40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/expense_add_favourite_textview"
+                    android:src="@drawable/plus_small"
+
+                    />
+            </RelativeLayout>
+
+            />
+
+            <ImageButton
+                android:id="@+id/expense_float_button"
+                style="@style/FloatingActionButton"
+                android:layout_width="@dimen/round_button56"
+                android:layout_height="@dimen/round_button56"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/expense_add_favourite_item"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/plus" />
+
+            <ImageButton
+                android:id="@+id/expense_float_button_send"
+                style="@style/FloatingActionButton"
+                android:layout_width="@dimen/round_button40"
+                android:layout_height="@dimen/round_button40"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/expense_add_favourite_item"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/plus"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/expense_float_button_request"
+                style="@style/FloatingActionButton"
+                android:layout_width="@dimen/round_button40"
+                android:layout_height="@dimen/round_button40"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/expense_add_favourite_item"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="70dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/expense_float_button_profile"
+                style="@style/FloatingActionButton"
+                android:layout_width="@dimen/round_button40"
+                android:layout_height="@dimen/round_button40"
+                android:layout_below="@+id/expense_add_favourite_item"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+-->
